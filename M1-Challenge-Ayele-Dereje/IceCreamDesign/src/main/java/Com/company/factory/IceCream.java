@@ -14,6 +14,9 @@ public class IceCream {
         this.productionTime = productionTime;
         this.ingredients = ingredients;
     }
+    public  double getProductionCostOverTime() {
+        return this.productionCost * this.productionTime;
+    }
 
     public String getFlavor() {
         return flavor;
@@ -54,4 +57,5 @@ public class IceCream {
     public void setIngredients(String[] ingredients) {
         this.ingredients = ingredients;
     }
+
 }

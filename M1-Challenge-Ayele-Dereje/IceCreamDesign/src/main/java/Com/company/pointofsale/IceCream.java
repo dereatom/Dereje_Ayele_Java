@@ -11,6 +11,10 @@ public class IceCream {
         this.quantity = quantity;
     }
 
+    public  double getPriceMultiplyQuantity() {
+        return this.price* this.quantity;
+    }
+
     public String getFlavor()
     {
         return flavor;

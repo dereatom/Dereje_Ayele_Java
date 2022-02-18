@@ -26,7 +26,7 @@ public abstract class Character {
         enemy.decreaseHealth(this.attackPower);
     }
     public void decreaseHealth(int amount) {
-    this.health -= amount;
+    this.setHealth(this.getHealth()-amount);
 }
 
     public void heal(int amount) {
@@ -52,6 +52,11 @@ public abstract class Character {
 
     public int getHealth() {
         return health;
+    }
+
+    public  void setHealth(int health){
+        this.health = health;
+
     }
 
     public int getStamina() {
