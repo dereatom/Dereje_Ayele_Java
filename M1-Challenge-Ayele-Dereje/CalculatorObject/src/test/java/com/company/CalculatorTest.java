@@ -62,10 +62,10 @@ public class CalculatorTest {
     @Test
     public void shouldAddDouble() {
         String failMessage = "Expected calculator to handle double addition.";
-        assertEquals(failMessage,12.456,calc.addDoubles(6.223d, 6.233d), .0001);
-        assertEquals(failMessage,5.7,calc.addDoubles(3.4d, 2.3d), .0001);
-        assertEquals(failMessage, -1, calc.addDoubles(2.0d, -3d), .0001);
-        assertEquals(failMessage, 8.6, calc.addDoubles(7.6d, 1d), .0001);
+        assertEquals(failMessage,12.456,calc.add(6.223d, 6.233d), .0001);
+        assertEquals(failMessage,5.7,calc.add(3.4d, 2.3d), .0001);
+        assertEquals(failMessage, -1, calc.add(2.0d, -3d), .0001);
+        assertEquals(failMessage, 8.6, calc.add(7.6d, 1d), .0001);
 
 
     }
@@ -73,9 +73,9 @@ public class CalculatorTest {
     @Test
     public void shouldMultiplyDoubles() {
         String failMessage = "Expected calculator to handle double multiplication.";
-        assertEquals(failMessage,29.48, calc.multiplyDoubles(6.7d, 4.4d),.0001);
-        assertEquals(failMessage, -6, calc.multiplyDoubles(2.0d, -3d), .0001);
-        assertEquals(failMessage, 7.6, calc.multiplyDoubles(7.6d, 1d), .0001);
+        assertEquals(failMessage,29.48, calc.multiply(6.7d, 4.4d),.0001);
+        assertEquals(failMessage, -6, calc.multiply(2.0d, -3d), .0001);
+        assertEquals(failMessage, 7.6, calc.multiply(7.6d, 1d), .0001);
 
 
     }
@@ -84,18 +84,18 @@ public class CalculatorTest {
     @Test
     public void shouldDivideDoubles() {
         String failMessage = "Expected calculator to handle double division.";
-        assertEquals(failMessage,4.909090909090909d, calc.divideDoubles(10.8d, 2.2d), .0001);
-        assertEquals(failMessage, -0.6666, calc.divideDoubles(2.0d, -3d), .0001);
-        assertEquals(failMessage, 7.6, calc.divideDoubles(7.6d, 1d), .0001);
+        assertEquals(failMessage,4.909090909090909d, calc.divide(10.8d, 2.2d), .0001);
+        assertEquals(failMessage, -0.6666, calc.divide(2.0d, -3d), .0001);
+        assertEquals(failMessage, 7.6, calc.divide(7.6d, 1d), .0001);
 
     }
 
     @Test
     public void ShouldSubtractDoubles() {
         String failMessage ="Expected calculator to handle double subtraction.";
-        assertEquals(failMessage,5.0, calc.subtractDoubles(5.5, 0.5), .0001);
-        assertEquals(failMessage, 5, calc.subtractDoubles(2.0d, -3d), .0001);
-        assertEquals(failMessage, 6.6, calc.subtractDoubles(7.6d, 1d), .0001);
+        assertEquals(failMessage,5.0, calc.subtract(5.5, 0.5), .0001);
+        assertEquals(failMessage, 5, calc.subtract(2.0d, -3d), .0001);
+        assertEquals(failMessage, 6.6, calc.subtract(7.6d, 1d), .0001);
 
     }
 
