@@ -5,8 +5,8 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-
 public class IceCreamTest {
+
     IceCream iceCream;
     @Before
     public  void setUp(){

@@ -21,23 +21,23 @@ public class Calculator {
         return a*b;
     }
 
-    public double add(double a, double b) {
+    public double addDoubles(double a, double b) {
         return a+b;
 
     }
 
-    public double multiply(double a, double b) {
+    public double multiplyDoubles(double a, double b) {
         return a * b;
     }
 
-    public double divide(double a, double b) {
+    public double divideDoubles(double a, double b) {
         if(b==0){
             return 0;
         }
         return a/b;
     }
 
-    public double subtract(double a, double b) {
+    public double subtractDoubles(double a, double b) {
         return a-b;
     }
 }

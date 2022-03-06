@@ -10,13 +10,11 @@ public class IceCream {
         this.price = price;
         this.quantity = quantity;
     }
-
     public  double getPriceMultiplyQuantity() {
-        return this.price* this.quantity;
+        return this.price * this.quantity;
     }
 
-    public String getFlavor()
-    {
+    public String getFlavor() {
         return flavor;
     }
 
@@ -39,4 +37,5 @@ public class IceCream {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
 }

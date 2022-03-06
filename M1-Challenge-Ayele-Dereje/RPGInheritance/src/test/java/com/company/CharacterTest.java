@@ -3,26 +3,27 @@ package com.company;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class CharacterTest {
 
     Character character;
-    Character warrior;
-    Character farmer;
-    Character constable;
-
 
     @Before
     public void setUp() throws Exception {
+        character = new Character("Jim",75,100,100,50, 10);
 
-        character = new Farmer("Jana", false, false);
-        warrior = new Warrior("Kaka");
     }
 
     @Test
-    public void shouldReturnDecreasedHealthValue() {
-        warrior.attack(character);
-        assertEquals(90, character.getHealth());
+    public void getStamina() {
+
     }
+    @Test
+    public void getHealth() {
+
+    }
+    @Test
+    public void getStrength() {
+
+    }
+
 }

@@ -10,13 +10,12 @@ public class FarmerTest {
 
     @Before
     public void setUp() throws Exception {
-        farmer = new Farmer("Sara", true, false );
+        farmer = new Farmer("Sarah", true, false );
 
     }
 
     @Test
     public void isPlow() {
-
         assertEquals(true, farmer.isPlow());
 
     }

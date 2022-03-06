@@ -13,8 +13,5 @@ public class ConverterApplication {
         System.out.format("The 4th day is %s%n", convertIf.convertDay(4));
         System.out.format("The 2th day is %s%n", convertSwitch.convertDay(2));
         System.out.format("The 7th day is %s%n", convertSwitch.convertDay(7));
-
-
-
     }
 }

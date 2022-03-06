@@ -10,8 +10,7 @@ public class IceCreamTest {
     IceCream iceCream;
 
     @Before
-    public void setUp() {
-
+    public void setUp() throws Exception {
         iceCream = new Com.company.pointofsale.IceCream("Vinela", 6, 12 );
 
     }

@@ -14,6 +14,7 @@ public class IceCream {
         this.productionTime = productionTime;
         this.ingredients = ingredients;
     }
+
     public  double getProductionCostOverTime() {
         return this.productionCost * this.productionTime;
     }

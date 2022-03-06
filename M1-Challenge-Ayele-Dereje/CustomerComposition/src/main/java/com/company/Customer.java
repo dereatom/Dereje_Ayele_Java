@@ -8,10 +8,10 @@ public class Customer {
     private String phoneNumber;
     private boolean rewardsMember;
 
-    private Address billingAddress;
-    private Address shippingAddress;
+    private String billingAddress;
+    private String shippingAddress;
 
-    public Customer(String firstName, String lastName, String email, String phoneNumber, Address shippingAddress, Address billingAddress, boolean rewardsMember) {
+    public Customer(String firstName, String lastName, String email, String phoneNumber, String shippingAddress, String billingAddress, boolean rewardsMember) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -61,19 +61,19 @@ public class Customer {
         this.rewardsMember = rewardMember;
     }
 
-    public Address getBillingAddress() {
+    public String getBillingAddress() {
         return billingAddress;
     }
 
     public void setBillingAddress(Address billingAddress) {
-        this.billingAddress = billingAddress;
+        this.billingAddress = String.valueOf(billingAddress);
     }
 
-    public Address getShippingAddress() {
+    public String getShippingAddress() {
         return shippingAddress;
     }
 
     public void setShippingAddress(Address shippingAddress) {
-        this.shippingAddress = shippingAddress;
+        this.shippingAddress = String.valueOf(shippingAddress);
     }
 }

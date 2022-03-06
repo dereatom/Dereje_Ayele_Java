@@ -1,6 +1,6 @@
 package com.company;
 
-public abstract class Character {
+public class Character {
 
     private String name;
     private int strength;
@@ -10,6 +10,7 @@ public abstract class Character {
     private int attackPower;
 
     public Character(String name, int strength, int health, int stamina, int speed, int attackPower){
+
         this.name = name;
         this.strength = strength;
         this.health = health;
@@ -18,15 +19,16 @@ public abstract class Character {
         this.attackPower = attackPower;
 
     }
-    public void run() {
-        System.out.println("RUNNING");
+
+    public void Run() {
+        System.out.println("Running");
     }
 
     public void attack(Character enemy) {
         enemy.decreaseHealth(this.attackPower);
     }
     public void decreaseHealth(int amount) {
-    this.setHealth(this.getHealth()-amount);
+    this.health -= amount;
 }
 
     public void heal(int amount) {
@@ -42,7 +44,7 @@ public abstract class Character {
     }
 
     public String getName() {
-        System.out.println("This is for test" + name);
+        System.out.println("This is for " + name);
         return name;
     }
 
@@ -52,11 +54,6 @@ public abstract class Character {
 
     public int getHealth() {
         return health;
-    }
-
-    public  void setHealth(int health){
-        this.health = health;
-
     }
 
     public int getStamina() {
